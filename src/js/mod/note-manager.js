@@ -12,24 +12,8 @@ var NoteManager = (function(){
         if(ret.status == 0){
           $.each(ret.data, function(idx, article) {
               console.log(article.text)
-              for(var i in article.text){
-                if (str[i] == '\'')
-                   str[i]=("&#039;");
-                else if (str[i] == '\"')
-                   str[i]=("&#034;");
-                else if (str[i] == '<')
-                   str[i]=("&lt;");
-                else if (str[i] == '>')
-                   str[i]=("&gt;");
-                else if (str[i] == '&')
-                   str[i]=("&amp;");
-                else if (str[i] == ' ')
-                   str[i]=("&nbsp;");
-                else if (str[i] == '\n')
-                   str[i]=("<br/>");
-                else
-                   str[i];
-                  }
+              console.log(article.text)
+              console.log(article.text)
               new Note({
                 id: article.id,
                 context: article.text,

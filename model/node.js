@@ -13,7 +13,13 @@ const Note = sequelize.define('note', {
     text: {
         type: Sequelize.STRING
     },
+    username:{
+        type: Sequelize.STRING
+
+    }
 });
+Note.sync({force: true})
+
 
 
 // Note.findAll({raw:true,where:{id:16}}).then(function(notes){
