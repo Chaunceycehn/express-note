@@ -35,13 +35,13 @@ Note.prototype = {
   createNote: function () {
     var tpl =  '<div class="note">'
               + '<div class="note-head"><span class="username"></span><span class="delete">&times;</span></div>'
-              + '<div class="note-ct" contenteditable="true"></div>'
+              + '<div class="note-ct" contenteditable="plaintext-only"></div>'
               +'</div>';
     this.$note = $(tpl);
     this.$note.find('.note-ct').text(this.opts.context);
     this.$note.find('.username').text(this.opts.username);
     this.opts.$ct.append(this.$note);
-    if(!this.id)  this.$note.css('bottom', '10px');  //新增放到右边
+    if(!this.id)  this.$note.css('bottom', '50%');  //新增放到右边
   },
 
   setStyle: function () {

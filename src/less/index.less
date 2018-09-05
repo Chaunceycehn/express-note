@@ -1,7 +1,16 @@
+*{margin:0; padding:0; box-sizing: border-box; }
+*::after, *::before{box-sizing:border-box;}
 html,body{
     margin: 0;
     height: 100%;
   }
+  body{
+    background: url('https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-529959.jpg') no-repeat center center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+  }
+
   ul,li{
     margin: 0;
     padding: 0;
@@ -12,7 +21,7 @@ html,body{
   }
   a{
     text-decoration: none;
-    color: #fff;
+    color: rgb(29, 27, 27);
   }
   
   
@@ -35,7 +44,7 @@ html,body{
         margin-left: 5px;
   
         span {
-          color: #fff;
+          color: rgb(29, 27, 27);
           display: block;
           margin-top: 6px;
         }
@@ -56,13 +65,13 @@ html,body{
     .add-note{
       float: left;
       margin-left: 16px;
-      border: 1px solid #fff;
+      border: 1px solid rgb(29, 27, 27);
       border-radius: 4px;
       padding: 2px 4px;
     }
     .login{
       float: right;
-      margin-left: 16px;
+      margin-left: 50px;
     }
   
   
@@ -76,32 +85,3 @@ html,body{
     height: calc(100% - 30px);
   }
   
-  
-  @keyframes move-twink-back {
-      from {background-position:0 0;}
-      to {background-position:-10000px 5000px;}
-  }
-  
-  
-  .stars, .twinkling{
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    width:100%;
-    height:100%;
-    display:block;
-  }
-  
-  .stars {
-    background:#000 url(http://7xpvnv.com2.z0.glb.qiniucdn.com/ba25c630-1c91-4ac1-a3de-65555d78c147.png) repeat top center;
-    z-index:-2;
-    
-  }
-  
-  .twinkling{
-    background:transparent url(http://7xpvnv.com2.z0.glb.qiniucdn.com/493b97e6-c499-4b41-a26b-8942873615b0.png) repeat top center;
-    z-index:-1;
-    animation:move-twink-back 200s linear infinite;
-  }
