@@ -1,8 +1,8 @@
-var path = require('path')
+const Sequelize = require('sequelize')
+const path = require('path')
 
-const Sequelize = require('sequelize');
 
-const sequelize = new Sequelize(undefined, undefined, undefined, {
+const sequelize = new Sequelize('note', undefined, undefined, {
     host: 'localhost',
     dialect: 'sqlite',
     // SQLite only
@@ -18,7 +18,7 @@ const Note = sequelize.define('note', {
 
     }
 });
-Note.sync({force: true})
+Note.sync()
 
 
 

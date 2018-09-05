@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var Note = require('../model/node.js').Note
+var Note = require('../model/note.js').Note
 
 /* GET users listing. */
 router.get('/notes', function (req, res, next) {
@@ -27,7 +27,6 @@ router.post('/notes/add', function (req, res, next) {
     var username = req.session.user.username;
     console.log({text: note, username: username})
     Note.create({text: note, username: username}).then(function(){
-      console.log(arguments)
       res.send({status: 0})
     }).catch(function(){
       res.send({ status: 1,errorMsg: '数据库异常或者你没有权限'});
