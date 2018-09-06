@@ -1,6 +1,6 @@
 # Express-sticky-note
 
-[在线查看](http://note.boloog.com/)
+[在线查看](http://note.chaunceychen.cn)
 
 ## 涉及技术栈
 - 前端：前端代码结构的组织、模块化开发方式、webpack 及loader和插件的使用、npm 的使用、前后端联调
