@@ -10,7 +10,7 @@
 ## 使用终端
 - `git clone git@github.com:Chaunceycehn/express-note.git`
 - `npm i`
-- `node bin/www`
+- `node ./bin/www`
 - `open http://localhost:3000/`
 
 ## 相关技能
